@@ -35,6 +35,13 @@ def change_password(account, users):
     account.password = newpass1
     print("succees")
 
+def make_post(account):
+    if account.admin:
+        print("only user accounts are able to make posts")
+        return
+    post = input("Make a post")
+    print(account.username, "posted", post)
+
 def main():
     users = []
     users.append(User("admin", "adminpassword", True))
@@ -55,6 +62,7 @@ def main():
     #menu options
     print("1. List Users")
     print("2. Change Password")
+    print("3. Make a post")
 
     option = input()
 
@@ -62,6 +70,8 @@ def main():
         list_users(account, users)
     elif option =="2":
         change_password(account, users)
+    elif option == "3":
+        make_post(account)
     else:
         print("invalid option")
 
