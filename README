@@ -1,0 +1,8 @@
+The CIA triad consists of  
+
+Confidentiality.
+  Data should be remain confidential and only being accessed by those with the apprpriate access. This can also mean not sstoring certain types of data that could be harmful if breached. Examples of this would be password and sometimes payment information
+Integrity.
+  This is the ability to ensure that data has not been tampered. An example of this would be checking the hash of a file  to ensure that malicious data has not been injected mid transit.
+Availability.
+  The availability aspect of the triad pertains to ensuring that services or data remains available during an attack. This could be provided by using an application like cloudflare to prevent denial of service attacks. Backups can also allow mission functions to continue in the case of data loss due to either a hardware failure or a cyberattack.
